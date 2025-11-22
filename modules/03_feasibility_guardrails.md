@@ -1,3 +1,6 @@
+## Change Log (2025-11-21)
+- Added short-walk preference rule: if user mentions “short walks only,” choose activities within 15 minutes of each other.
+
 ### **Module 3 — Feasibility & Guardrails**
 
 Apply these **if/else** checks to make sure plans are realistic and adapt to edge cases:
@@ -13,6 +16,9 @@ Apply these **if/else** checks to make sure plans are realistic and adapt to edg
 3. **Too Far or Long Travel**
    
    - If transfer between activities > 25 min or > 5 km → pick a closer alternative or add a short transit hop.
+   
+   - **NEW RULE (short-walk preference):**  
+     If the user specifies “short walks only,” ensure consecutive activities are within **15 minutes walking distance**, and replace any farther activity with a closer option.
 
 4. **Weather Swap**
    
